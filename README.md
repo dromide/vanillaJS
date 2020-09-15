@@ -22,3 +22,9 @@ IIFE
 ## 9. imageGallery
 
 ## 10. animationNavbar
+nav li{ height: 25px; } 
+
+## 11. parallaxEffect
+ScrollMagic
+
+## 12. weatherApp
