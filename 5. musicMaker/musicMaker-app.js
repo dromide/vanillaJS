@@ -1,6 +1,6 @@
 function sequencer() {
-    const kick = new Tone.Player('./drums/kick-electro01.wav').toMaster();
-    const snare = new Tone.Player('./drums/snare-lofi02.wav').toMaster();
+    const kick = new Tone.Player('../5. musicMaker/drums/kick-electro01.wav').toMaster();
+    const snare = new Tone.Player('../5. musicMaker/drums/snare-lofi02.wav').toMaster();
     let index = 0;
 
     // const kickInputs = document.querySelectorAll('.kick');

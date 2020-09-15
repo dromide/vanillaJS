@@ -1,22 +1,24 @@
 # vanillaJS
 
-## smoothScroll
+## 1. smoothScroll
 
-## visualEffect
+## 2. visualEffect
 
-## imageSlide
+## 3. imageSlide
 
-## responseNavBar
+## 4. responseNavBar
 
-## musicMaker
+## 5. musicMaker
 Tone.js
 
-## pageTransition
+## 6. pageTransition
 Barba.js - FadeTransition
 
-## typerwritingEffect
+## 7. typerwritingEffect
 IIFE
 
-## transitionBackgrounds
+## 8. transitionBackgrounds
 
-## imageGallery
+## 9. imageGallery
+
+## 10. animationNavbar
