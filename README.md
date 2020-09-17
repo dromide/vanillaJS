@@ -29,4 +29,5 @@ ScrollMagic
 
 ## 12. weatherApp
  darksky no longer works, 
- now i'm using https://openweathermap.org/api/one-call-api
+ now i'm using https://openweathermap.org/api/one-call-api, 
+ proxy https://cors-anywhere.herokuapp.com/
