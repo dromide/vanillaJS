@@ -3,7 +3,10 @@ window.addEventListener('load', () => {
     let lat;
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
+    let temperatureSection = document.querySelector('.temperature');
+    const temperatureSpan = document.querySelector('.temperature span');
     let locationTimezone = document.querySelector('.location-timezone');
+    let weatherIcon = document.querySelector('.weatherIcon');
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
@@ -20,12 +23,36 @@ window.addEventListener('load', () => {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data);
-                    // const [temp, weather] = data.current;
+                    console.log(data.current);
+                    const { temp, weather } = data.current;
                     //Set DOM Elements from the API
-                    // temperatureDegree.textContent = temp;
-                    // temperatureDescription.textContent = weather;
-                    // locationTimezone.textContent = data.timezone;
+
+                    // change temperature to Celsius/Farenheit
+                    // Convert from Kelvin to Fahrenheit => ℉=((K-273.15)*1.8)+32
+                    // Convert from Kelvin to Celsius => ℃=K-273.15
+                    temperatureDegree.textContent = temp - 273.15;
+                    let Celsius = temp - 273.15
+                    let Fahrenheit = ((temp - 273.15) * 1.8) + 32
+                    temperatureSection.addEventListener('click', () => {
+                        if (temperatureSpan.textContent === "℉") {
+                            temperatureSpan.textContent = "℃";
+                            temperatureDegree.textContent = Celsius;
+                        } else {
+                            temperatureSpan.textContent = "℉";
+                            temperatureDegree.textContent = Fahrenheit;
+                        }
+                    });
+
+
+                    console.log(weather[0].description);
+                    temperatureDescription.textContent = weather[0].description;
+                    locationTimezone.textContent = data.timezone;
+                    // https://github.com/yuvraaaj/openweathermap-api-icons or try to skycons
+                    // skycons => icon.replace(/-/g, "_" ).toUpperCase();
+                    const { icon } = weather[0];
+                    console.log(icon);
+                    weatherIcon.innerHTML = `<img src="./icons/${icon}.png">`;
+
                 });
         });
 

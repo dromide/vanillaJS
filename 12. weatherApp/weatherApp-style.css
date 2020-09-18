@@ -23,6 +23,9 @@ body{
 .temperature{
     flex-direction: column;
 }
+.location img{
+    filter: invert(100%);
+}
 .degree-section{
     display: flex;
     align-items: center;
