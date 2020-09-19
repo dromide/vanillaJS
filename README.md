@@ -34,3 +34,19 @@ ScrollMagic
 
  ## 13. simpleFormAnimation
  
+ ## 14. 2.5dParallaxEffect
+
+ ## 15. CssPreloaderAnimation
+
+ ## 16. SvgMorphing
+ anime.js
+
+ ## 17. GSAP-Animation
+ GSAP
+ 
+ ## 18. scrollAnimation
+ ScrollMagic
+ gsap
+ webgradients.com
+
+ ## SASS -css
