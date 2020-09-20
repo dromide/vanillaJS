@@ -1,0 +1,32 @@
+// $primaryBtn: rgb(56, 146, 142);
+// $textColor: rgb(58,42,42);
+@import './variables';
+// header{
+//     background: lightblue;
+//     display: flex;
+//     justify-content: center;
+//     color: $textColor;
+//     button{
+//         background: $primaryBtn;
+//         &:hover{
+//             background: red;
+//         }
+//         &::after{
+//             content: "Hellooo";
+//         }
+//     }
+// }
+// header button{
+//     background: $primaryBtn;
+// }
+@import "./header";
+.contact{
+    // @include flexCenter(row, blue);
+    @extend header;
+    background: lightcoral;
+    // - + * /
+    width: 100% - 20%;
+}
+// .contact button{
+//     background: $primaryBtn;
+// }
