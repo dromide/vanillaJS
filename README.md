@@ -32,32 +32,38 @@ ScrollMagic
  now i'm using https://openweathermap.org/api/one-call-api, 
  proxy https://cors-anywhere.herokuapp.com/
 
- ## 13. simpleFormAnimation
+## 13. simpleFormAnimation
  
- ## 14. 2.5dParallaxEffect
+## 14. 2.5dParallaxEffect
 
- ## 15. CssPreloaderAnimation
+## 15. CssPreloaderAnimation
 
- ## 16. SvgMorphing
+## 16. SvgMorphing
  anime.js
 
- ## 17. GSAP-Animation
+## 17. GSAP-Animation
  GSAP
  
- ## 18. scrollAnimation
+## 18. scrollAnimation
  ScrollMagic
  gsap
  webgradients.com
 
- ## SASS -css
+## SASS -css
 
- ## 19. MeditationApp
+## 19. MeditationApp
 
- ## 20. bubbleEffect
+## 20. bubbleEffect
 
- ## 21. SmoothPageTransitions
+## 21. SmoothPageTransitions
  ##### node.js - parcel-bundler
  ###### @dogstudio/highway, gsap
  ###### **
 
- ## 22. MusicApp
+## 22. MusicApp
+
+## 23. CssGRid
+    with Firefox
+
+
+
