@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>JavaScript Loan Calculator</title>
+</head>
+
+<body>
+  <!-- 다음은 사용자가 <input> 필드들에 데이터를 입력하면 출력 결과를 <span> 엘리먼트에 출력하는 HTML 테이블.
+    입력 필드들의 id는 "interest"와 'years" 등.
+    테이블 안에 있는 이 id들은 자바스크립트 코드에서 사용.
+    일부 input 엘리먼트가 onchange나 onclick 이벤트처리기를 정의하고 있음을 참고.
+    이 이벤트 처리기들은 사용자가 데이터를 입력하거나 버튼을 클릭했을 때 실행될 자바사크립트 코드를 포함.-->
+
+  <table>
+    <tr>
+      <th>Enter Loan Data:</th>
+      <td></td>
+      <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+    </tr>
+    <tr>
+      <td>Amount of the loan ($):</td>
+      <td><input id="amount" onchange="calculate();"></td>
+      <td rowspan="8">
+        <canvas id="graph" width="400" height="250"></canvas>
+      </td>
+    </tr>
+    <tr>
+      <td>Annual interest (%):</td>
+      <td><input id="apr" onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <td>Repayment period (years):</td>
+      <td><input id="years" onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <td>Zipcode (to find lenders):</td>
+      <td><input id="zipcode" onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <th>Approximate Payments</th>
+      <td><button onclick="calculate()">Calculate</button></td>
+    </tr>
+    <tr>
+      <td>Monthly payment:</td>
+      <td>$<span class="output" id="payment"></span></td>
+    </tr>
+    <tr>
+      <td>Total payment:</td>
+      <td>$<span class="output" id="total"></span></td>
+    </tr>
+    <tr>
+      <td>Total interest:</td>
+      <td>$<span class="output" id="totalinterest"></span></td>
+    </tr>
+    <tr>
+      <th>Sponsors:</th>
+      <td colspan="2">Apply for your loan with one of these fine lenders:
+        <div id="lenders"></div>
+      </td>
+    </tr>
+  </table>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
